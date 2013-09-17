@@ -1,0 +1,37 @@
+/* override jquery mobile styles*/
+.ui-dialog .ui-header, 
+.ui-dialog .ui-content, 
+.ui-dialog .ui-footer { 
+	max-width: 800px; 
+	margin: 10% auto 15px auto; 
+}
+ 
+.ui-dialog-contain {
+	max-width: 800px;
+}
+ 
+/* self-defined style*/
+body{ 
+ 	background-color:#d0e4fe;
+}
+.xml-tag, .variable-name {
+	color: blue;
+	font-size: 18px;
+}
+.xml-text, .variable-value {
+	color: red;
+	font-size: 18px;
+}
+.content-block {
+	box-shadow: 10px 10px 5px #888888;
+	margin:10px 5px 25px 20px;
+	padding: 10px 10px 10px 10px;
+}
+.content-block-title {
+	font-size: 24px;
+	font-weight:bold;
+	margin: 10px 10px 10px 10px;
+}
+#name span {
+	font-size: 22px !important; 
+}

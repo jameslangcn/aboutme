@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with STYLEVISION v2004 rel. 2 U (http://www.xmlspy.com) by Joe Caron (The Bakers Catalogue, INC) -->
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>aboutme</display-name>
+  	<description>Main Serivce</description>
+  	<distributable/><!-- enforce session attributes to implement Serializable -->
+ 
+    <welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+    	<welcome-file>index.jsp</welcome-file>
+  	</welcome-file-list>
+	
+	<context-param>
+	    <param-name>path</param-name>
+	    <param-value>@path@</param-value>
+  	</context-param>
+  	<context-param>
+	    <param-name>ctx</param-name>
+	    <param-value>@root@</param-value>
+  	</context-param>
+  	<context-param>
+	    <param-name>download_path</param-name>
+	    <param-value>@download.path@</param-value>
+  	</context-param>
+  	<context-param>
+	    <param-name>server</param-name>
+	    <param-value>@server@</param-value>
+  	</context-param>
+	<!-- Master Servlet -->
+	<!-- 
+	<servlet>
+	    <servlet-name>MasterServlet</servlet-name>
+	    <servlet-class>com.turbo_license.aboutme.MasterServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+	</servlet>
+	-->
+	<!-- Friendly-URL Dispatcher -->  
+  
+  	<!-- DEFAULT -->
+<servlet-mapping>
+	<servlet-name>default</servlet-name>
+	<url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+<servlet-mapping>
+	<servlet-name>default</servlet-name>
+	<url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.gif</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jar</url-pattern>
+    </servlet-mapping>
+
+	<servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.key</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.license</url-pattern>
+    </servlet-mapping>
+    
+  	<servlet>
+    	<servlet-name>MasterServlet</servlet-name>
+    	<servlet-class>com.turbo_license.aboutme.MasterServlet</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+    	<servlet-name>MasterServlet</servlet-name>
+    	<url-pattern>/MasterServlet</url-pattern>
+  	</servlet-mapping>
+
+  	
+	<servlet>
+    	<servlet-name>AboutMe</servlet-name>
+    	<servlet-class>com.turbo_license.aboutme.AboutMe</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+    	<servlet-name>AboutMe</servlet-name>
+    	<url-pattern>/AboutMe</url-pattern>
+  	</servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>com.turbo_license.rest</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping> 	
+  	
+<!--  	
+  	<servlet>
+    	<servlet-name>RestfulContainer</servlet-name>
+    	<servlet-class>org.glassfish.jersy.servlet.ServletContainer</servlet-class>
+    	<init-param>
+     		<param-name>jersey.config.server.provider.packages</param-name>
+      		<param-value>com.turbo_license.rest</param-value>
+    	</init-param>
+    	<load-on-startup>1</load-on-startup>
+  	</servlet>
+  	<servlet-mapping>
+    	<servlet-name>RestfulContainer</servlet-name>
+    	<url-pattern>/rest/*</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	 <servlet>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <servlet-class>org.glassfish.jersy.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>com.turbo_license.rest</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+-->  	
+</web-app>
+  	
+

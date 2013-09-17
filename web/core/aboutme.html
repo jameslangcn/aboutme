@@ -1,0 +1,661 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Huan's Resume</title>
+	<meta id="page_info" product_count="0"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="@root@/css/style.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js">
+	</script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
+	</script>
+	<script type="text/javascript" src="@root@/js/jquery.tagcloud.js" xml:space="preserve">
+	</script>
+	<script type="text/javascript" src="@root@/js/aboutMe.js" xml:space="preserve">
+	</script>
+	
+</head>
+<Body>
+	<div data-role="page" id="MainPage">
+		<div data-role="header">
+			<h1>Huan's R&#233;sum&#233;</h1>
+		</div>
+		<div data-role="content">
+			<div id="name" class="personal-info content-block">
+				<span class="xml-tag">&lt;name&gt;</span>
+				<span class="xml-text">Huan Zhang</span>
+				<span class="xml-tag">&lt;/name&gt;</span>
+			</div>
+			<div class="personal-info content-block">			
+				<div>
+					<span>Address: {</span>
+					<span class="variable-name">line1:</span>
+					<span class="variable-value">&#39;47 Lyme Rd, Apt 9&#39;</span>
+					, <span class="variable-name">city:</span>
+					<span class="variable-value">&#39;Hanover&#39;</span>
+					, <span class="variable-name">state:</span>
+					<span class="variable-value"> &#39;NH&#39;</span>
+					, <span class="variable-name">zip:</span>
+					<span class="variable-value">&#39;03755&#39;</span>
+					<span>} </span>
+				</div> 
+				<div>
+					<span> Contact: {</span>
+					<span class="variable-name">email:</span> 
+					<span class="variable-value">&#39;jasonzhang01@gmail.com&#39;</span>
+					, <span class="variable-name">phone:</span>
+					<span class="variable-value">&#39;256-270-4734&#39;</span>
+					<span>}</span>
+				</div>
+			</div>
+			<div class="summary content-block">
+				<div class="content-block-title">Summary</div>
+				<div>Summary = array (<br />
+					<span class="variable-value">&quot;1&quot;</span>
+					 => <span class="variable-value">&quot;Over 10 years of background in web application design/development, databases/networks and management of critical projects&quot;</span>
+					, <br /><span class="variable-value">&quot;2&quot;</span>
+					 => <span class="variable-value">&quot;Aptitude and eagerness to learn new languages, technologies and solutions&quot;</span>
+				);
+				</div>
+			</div>
+			<div class="skills content-block">
+				<div class="content-block-title">Skill cloud:</div>
+				<div id="SkillCloud">
+					<a href="#JavaCodePage" rel="10"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">Java(J2EE)</a>
+					<a href="#" rel="7">Tomcat</a>
+					<a href="#XMLCodePage" rel="10"
+						data-rel="dialog" 
+						data-transition="slidedown" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">XML</a>
+					<a href="#" rel="10">HTML</a>
+					<a href="#" rel="5">CSS</a>
+					<a href="#JQueryCodePage" rel="10"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="a">jQuery (mobile)</a>
+					<a href="#" rel="10">AJAX</a>
+					<a href="#" rel="8">PHP</a>
+					<a href="#" rel="3">apache</a>
+					<a href="#" rel="5">CVS</a>
+					<a href="#" rel="7">svn</a>
+					<a href="#" rel="7">vi</a>
+					<a href="#" rel="2">git</a>
+					<a href="#ShellScriptCodePage" rel="8"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">shell script</a>
+					<a href="#" rel="2">VC++</a>
+					<a href="#" rel="5">VB</a>
+					<a href="#" rel="3">C#</a>
+					<a href="#" rel="8">Eclipse</a>
+					<a href="#" rel="7">Oracle</a>
+					<a href="#" rel="9">mySQL</a>
+					<a href="#" rel="9">PostgreSQL</a>
+					<a href="#" rel="4">JMS</a>
+					<a href="#" rel="4">MQ</a>
+					<a href="#SOAPCodePage" rel="10"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">SOAP</a>
+					<a href="#RESTfulCodePage" rel="8"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">RESTful</a>
+					<a href="#WebServiceCodePage" rel="10"
+						data-rel="dialog" 
+						data-transition="flip" 
+						data-corners="true" 
+						data-shadow="true" 
+						data-iconshadow="true"
+						data-close-btn="left"
+						data-wrapperels="span" 
+						data-theme="c">webservice</a>
+					<a href="#" rel="5">Linux</a>
+					<a href="#" rel="5">Microsoft Windows</a>
+					<a href="#" rel="7">OS X</a>
+				</div>
+			</div>
+			<div class="experience content-block">
+				<div class="content-block-title">Experiences</div>
+				<div>List myExperiences = new List();</div>
+				<div>Web developer, King Arthur Flour. 08/2009 - present</div>
+				
+				<ul>
+					<li>Developed WebPOS system for the retail stores using Java, PostgreSQL, jQuery mobile, XML, Java Applet, and JAVAPOS. The application is a web based POS system integrated with devices like: touch screens, iPad mini, receipt printers(local and remote), cash drawers, credit card swippers, and flatbed scanners, etc. Participated in the whole development cycle including gathering and analyzing customer requirements, design, coding, testing, debugging and training.</li>  
+					<li>Developed and maintained the e-commerce shopping website using Java, jQuery UI, PostgreSQL(mySQL). Used technologies including XML, Javascript, SOAP, RESTful, Google Map API, Yahoo! BOSS GeoCode API, Litle Credit Card Token API. Also integrated with Commercial Ware with JMS and  MQ.</li>
+					<li>Developed and maintained the community website using drupal6, php, postgreSQL, etc..  Modules include views, CCK, events, ImageCache, Organic groups, etc. Also developed  our own modules: kaf,  recipe and recipebox. Using XMLRPC and Json to communicate with our shopping site (customer accounts, reviews and recipes)</li>
+				</ul>
+				  
+				<div>PHP and Oracle specialist, Progress Rail Service. 02/2005 - 03/2009</div>
+				<ul>
+					<li>Analyzed customer&#39;s requirements and designed system models in large-scale enterprise application</li>
+					<li>Successfully created and implement sales, invoicing, purchasing and inventory management system utilizing PHP/HTML/JavaScript/XML/AJAX/PL SQL/ORACLE/mySQL</li> 
+					<li>Built web site by using XML/PHP/ORACLE/APACHE/LINUX</li> 
+					<li>Built web services using XML/SOAP/WSDL/RPC</li> 
+				</ul>
+				<div>Lead Programmer and Oracle ERP consultant, Han Consulting (China) Ltd. 1999 - 2001</div>
+				<ul> 
+					<li>Successfully created system utilizing PHP/HTML/JavaScript/PL SQL/apache/Oracle/Unix </li>
+					<li>Successfully served on critical business process reengineering, Oracle ERP applications and Oracle database projects for ACCA, Long Di Company, Matsushita Electric Works (China) Company, Ltd. and NHL Ltd. by using PL/SQL(created and modified tables, views and stored procedures), Develop2000 (created and modified forms and reports)</li> 
+					<li>Helped clients to integrate Oracle ERP applications and the old system by using (VBA/C++/MS ACCESS)</li>
+				</ul>
+				<div>Lead Programmer, Raising Tech Ltd. 1996 - 1999</div>
+				<ul> 
+					<li>Promoted to multi-disciplinary task team leadership after success in earlier assignment as Oracle Database and ERP application consultant</li> 
+					<li>Finalized application delivered web exploring, publication, email management, category service, files/printers management, BBS and security management (C++/MFC/VB/ODBC/MS ACCESS/MS SQLSERVER)</li>
+				</ul>
+				<div>Programmer and ERP consultant, RIAMB Information Technology Co., Ltd. 1993 - 1996</div>
+				<ul> 
+					<li>Built an enterprise-level client/server ERP (Enterprise Resources Plan) application using Windows NT and Oracle/MS SQL SERVER as the server application and VC++/SDK/VB/ MS ACCESS as the client application</li> 
+				</ul>
+			</div>
+			<div class="education content-block">
+				<div class="content-block-title">// Education</div> 
+				<ul>
+					<li>M.S., System and Information Science, 2004 @Syracuse University, Dept. of Computer Science, Syracuse, NY 2002 - 2004</li>
+					<li>B.E., Mechanical Engineering, 1992 @Beijing Institute of Printing, Beijing, China 1988-1992</li>
+				</ul> 
+			</div>
+		</div> <!-- page-content -->
+		<div data-role="footer">
+		</div>	
+	</div>
+	<div data-role="page" data-theme="i" id="JavaCodePage">
+		<div data-role="header" id="JavaCodePageHeader">
+			<h1>Java Code</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+private Element generateLicense(HttpServletRequest request, Element elResult) {
+	private Element generateLicense(HttpServletRequest request, Element elResult) {
+	Element elResponse = new Element("response");
+	String currentFile = System.currentTimeMillis() + "";
+	try {
+		String keycode = request.getParameter("license");
+		License license = new License();
+		license.loadByKeycode(keycode);
+		if (license.getId() > 0) {
+			String startDate = license.getCreatedDate() == null ? "" : license.getCreatedDate();
+			String updatedExpireDate = license.getUpdatedExpireDate() == license.getExpireDate() ? "" : license.getUpdatedExpireDate();
+			String attr1 = license.getAttr1() == null ? "" : license.getAttr1();
+			String attr2 = license.getAttr2() == null ? "" : license.getAttr2();
+			String attr3 = license.getAttr3() == null ? "" : license.getAttr3();
+			String attr4 = license.getAttr4() == null ? "" : license.getAttr4();
+			String attr5 = license.getAttr5() == null ? "" : license.getAttr5();
+			int    maxNumber = license.getMaxNumber();
+			String data = 	keycode + "|" +
+							startDate + "|" +
+							updatedExpireDate + "|" +
+							attr1 + "|" + 
+							attr2 + "|" + 
+							attr3 + "|" + 
+							attr4 + "|" + 
+							attr5 + "|" +
+							maxNumber;
+			byte[] dataToEncrypt = data.getBytes("UTF-8");
+			// get public key and secret key 
+			//byte[] dataToEncrypt = "TURBO-LICENSE TEST 20130105".getBytes("UTF-16LE");
+		    byte[] cipherData = null;
+		    byte[] decryptedData;
+
+
+		    KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
+		    kpg.initialize(1024);
+		    KeyPair kp = kpg.genKeyPair();
+		    Key publicKey = kp.getPublic();
+		    //String pubStr = new String(publicKey.getEncoded());
+		    Blob pubBlob = new javax.sql.rowset.serial.SerialBlob(publicKey.getEncoded());
+		    license.setPublicKey(pubBlob);
+		    
+		    Key privateKey = kp.getPrivate();
+		    //String privateStr = new String(privateKey.getEncoded());
+		    Blob privateBlob = new javax.sql.rowset.serial.SerialBlob(privateKey.getEncoded());
+		    license.setPrivateKey(privateBlob);
+		    
+		    KeyFactory fact = KeyFactory.getInstance("RSA");
+
+		    //RSAPublicKeySpec pub = (RSAPublicKeySpec) fact.getKeySpec(publicKey, RSAPublicKeySpec.class);
+		    //RSAPublicKeySpec spec = new RSAPublicKeySpec(pub.getModulus(), pub.getPublicExponent());
+		    RSAPrivateKeySpec prvt = (RSAPrivateKeySpec) fact.getKeySpec(privateKey, RSAPrivateKeySpec.class);
+		    RSAPrivateKeySpec spec = new RSAPrivateKeySpec(prvt.getModulus(), prvt.getPrivateExponent());
+		    
+		    KeyFactory factory = KeyFactory.getInstance("RSA");
+
+		    //PublicKey publicKeyRSA = factory.generatePublic(spec);
+		    PrivateKey privateKeyRSA = factory.generatePrivate(spec);
+		    Cipher cipher = Cipher.getInstance("RSA");
+		    String cipherStr = "";
+		    try {
+	            cipher.init(Cipher.ENCRYPT_MODE, privateKeyRSA);
+	            cipherData = cipher.doFinal(dataToEncrypt);
+	            //cipherStr = new String(cipherData);
+	            Blob cipherBlob = new javax.sql.rowset.serial.SerialBlob(cipherData);
+	            license.setEncryptedLicense(cipherBlob);
+	            String oldFile = license.getFileName();
+	            license.setFileName(currentFile);
+	            license.save();
+	            // save to file
+	            String fileName = currentFile + ".public.key";
+	            byte[] publicBytes = pubBlob.getBytes(1, (int)pubBlob.length());
+	            saveToFile(fileName, publicBytes);
+	            fileName = currentFile + ".license";
+	            saveToFile(fileName, cipherData);
+	            removeOldFiles(oldFile);
+	            elResponse.setAttribute("success", "1");
+	            elResponse.setAttribute("public_key_url", server + ctx + downloadPath + "/" + currentFile + ".public.key");
+	            elResponse.setAttribute("encrypted_license_url", server + ctx + downloadPath + "/" + currentFile + ".license");
+	            logger.info("Encrypted license is " + new String(cipherData));
+	        } catch (Exception e1) {
+	            logger.error("Encrypt error: " + e1.getMessage(), e1);
+	            elResponse.setAttribute("success", "0");
+	            elResponse.setAttribute("errmsg", "Encrypt license error");
+	        }
+	        
+	        // decrypt
+	        // known pubStr, privateStr, and cipherData
+	        
+	        license = new License();
+	        license.loadByKeycode(keycode);
+	        
+	        byte[] DCipherData = license.getEncryptedLicense().getBytes(1, (int)license.getEncryptedLicense().length());
+	        PublicKey DPublicKey = KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(license.getPublicKey().getBytes(1, (int) license.getPublicKey().length())));
+	        // byte[] b = Base64.base64Encode(cipherData);
+	        byte[] b = Base64.base64Encode(DCipherData);
+	        //cipher.init(Cipher.DECRYPT_MODE, privateKey);
+	        cipher.init(Cipher.DECRYPT_MODE, DPublicKey);
+	        try {
+	            decryptedData = cipher.doFinal(Base64.base64Decode(b));
+	            logger.info("Decrypted: " + new String(decryptedData, "UTF-8"));
+	        } catch (Exception e1) {
+	            logger.error("Decrypt error: " + e1.getMessage(), e1 );
+	        }
+		} else {
+			elResponse.setAttribute("errmsg", "The license does not exist!");
+			elResponse.setAttribute("success", "0");
+		}
+		
+	} catch (Exception e) {
+		logger.error(e.getMessage(), e);
+	}
+	elResult.addContent(elResponse);
+	return elResult;
+}
+				</pre>
+			</code>
+		</div>
+	</div>
+	
+	<div data-role="page" data-theme="i" id="WebServiceCodePage">
+		<div data-role="header" id="WebServiceCodePageHeader">
+			<h1>Java Code to consume webservice</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+public void contactService() {
+	try {
+
+		logger.debug("ATTEMPTING TO CONTACT SERVICE .... ");
+		
+		URL url = new URL(this.linkToWebService);
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		// Setup HTTP POST parameters
+		connection.setRequestProperty("Content-type", "text/html; charset=UTF-8");
+		connection.setDoOutput(true);
+		connection.setDoInput(true);
+		connection.setUseCaches(false);
+
+		// POST data
+		logger.debug("ABOUT TO POST .... ");
+		OutputStream out = connection.getOutputStream();
+		out.write(this.xmlIn.getBytes());
+		out.close();
+		logger.info("xmlin is : \n" + this.xmlIn);
+		// get data from URL connection and return the XML document as a StringBuffer
+		try {
+			this.xmlOut = readURLConnection(connection);
+			logger.info("xmlout is: \n" + this.xmlOut);
+		} catch (Exception e) {
+			logger.error(e.getMessage(),e);//"Servlet: Tracker, Function: ContactService, Error: Error in reading URL Connection" + e.getMessage(), e);
+		}
+	} catch (Exception e1) {
+		logger.error(e1.getMessage(), e1);// ("Servlet: Tracker, Function: ContactService, Error: sendding data to server: " + e1.toString());
+	}
+}
+
+/************************************************************************************************************
+ * This method read all of the data from a URL connection to a String
+ ************************************************************************************************************/
+private static String readURLConnection(URLConnection uc) throws Exception {
+	StringBuffer buffer = new StringBuffer();
+	BufferedReader reader = null;
+	try {
+		reader = new BufferedReader(new InputStreamReader(uc.getInputStream()));
+		int letter = 0;
+		while ((letter = reader.read()) != -1)
+			buffer.append((char) letter);
+	} catch (Exception e) {
+		System.out.println("Cannot read from URL" + e.toString());
+		throw e;
+	} finally {
+		try {
+			reader.close();
+		} catch (IOException io) {
+			System.out.println("Error closing URLReader!");
+			throw io;
+		}
+	}
+	return buffer.toString();
+}
+
+private Element processResponseXML() {
+	Element result = null;
+	SAXBuilder sb = new SAXBuilder();
+	Document xmlDoc = null;
+	try {
+		xmlDoc = sb.build(new InputSource(new StringReader(this.xmlOut)));
+		result = xmlDoc.getRootElement();
+	} catch (Exception e) {
+		logger.debug("Servlet: Tracker, Function: processXML, Error: " + e);
+	}
+	return result;
+}
+
+				</pre>
+			</code>
+		</div>
+	</div>
+	
+	<div data-role="page" data-theme="i" id="XMLCodePage">
+		<div data-role="header" id="XMLCodePageHeader">
+			<h1>Java Code to Process XML Message</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+
+static public HashMap&lt;String, String&gt; getCityAndState(String zip) {
+	HashMap&lt;String, String&gt; result = new HashMap&lt;String, String&gt;();
+	try {
+		URL url = new URL(WS_URL + zip);
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+		// Setup HTTP POST parameters
+		connection.setDoOutput(true);
+		connection.setDoInput(true);
+	
+		String data = "";
+		
+		data = readURLConnection(connection);
+		logger.info("city data is " + data);
+		Element root = processResponseXML(data);
+	
+		if (root != null) {
+			Element table = root.getChild("Table");
+			if (table != null) {
+				Element city = table.getChild("CITY");
+				Element state = table.getChild("STATE");
+				result.put("city", city.getText());
+				result.put("state",state.getText());
+			}
+		}
+	} catch (Exception e) {
+		logger.error("Servlet: ZipToCityAndState, Function: getCityAndState, Error: sendding data to server: " + e.getMessage(), e);
+	} 
+	return result;
+}
+				</pre>
+			</code>
+		</div>
+	</div>
+	
+	
+	<div data-role="page" data-theme="i" id="JQueryCodePage">
+		<div data-role="header" id="JQueryCodePageHeader">
+			<h1>jQuery Code to initial a page</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+
+$(document).ready(function () {
+	
+	$("#ProductTab").accordion({ header: "h3"});
+	$("#LicenseTab").accordion({ header: "h3"});
+	$('#tabs').tabs();
+	$("#ProductRow").hide();
+	var prodId = "";
+	$("div[id^=ProductRow_]").each(function () {
+		//var obj = $(this);
+		//prodId = obj.attr("product_id");
+		//obj.find("#")
+	});
+	var licenseCount = $("#LicenseTab").attr("license_count");
+	for (var i = 1; i &lt;= licenseCount; i ++) {
+		$("#LicenseStartDate_" + i).datepicker({ dateFormat: 'yy-mm-dd' });
+		$("#LicenseExpireDate_" + i).datepicker({ dateFormat: 'yy-mm-dd' });
+	}
+	$("#NewLicenseStartDate").datepicker({ dateFormat: 'yy-mm-dd' });
+	$("#NewLicenseExpireDate").datepicker({ dateFormat: 'yy-mm-dd' });
+
+});
+				</pre>
+			</code>
+		</div>
+	</div>
+	
+	<div data-role="page" data-theme="i" id="SOAPCodePage">
+		<div data-role="header" id="SOAPCodePageHeader">
+			<h1>Java code to consume webservice with SOAP</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+private void contactService () {
+	//String urlStr = "https://posgateway.cert.secureexchange.net/Hps.Exchange.PosGateway.UAT/PosGatewayService.asmx";
+
+	try {
+		// soap connection
+		SOAPConnectionFactory soapConnFactory = SOAPConnectionFactory.newInstance();
+		SOAPConnection connection = soapConnFactory.createConnection();
+		
+
+        // make original xml to inputstream
+        byte[] bytes = this.xmlIn.getBytes();
+        InputStream in = new ByteArrayInputStream(bytes);
+        SAXBuilder builder = new SAXBuilder();
+        Document doc = builder.build(in);	        
+        
+        //Send the message and get a reply   
+           
+        //Set the destination
+        String destination = this.destUrl;
+        //Send the message
+        ByteArrayOutputStream sos = new ByteArrayOutputStream();
+        MessageFactory messageFactory = MessageFactory.newInstance();
+        SOAPMessage message = messageFactory.createMessage();
+
+        message = toMessage(doc);
+        message.writeTo(sos);
+        
+
+		SOAPMessage reply = connection.call(message, destination);
+	
+		//Check the output
+		//Create the transformer
+		TransformerFactory transformerFactory = TransformerFactory.newInstance();
+		Transformer transformer = transformerFactory.newTransformer();
+		//Extract the content of the reply
+		Source sourceContent = reply.getSOAPPart().getContent();
+		//Set the output for the transformation
+		StreamResult response = new StreamResult(sos);
+		transformer.transform(sourceContent, response);
+		this.xmlOut = sos.toString();
+		//processResponseXML();
+        //Close the connection            	
+		connection.close();
+		
+	} catch (Exception e) {
+		logger.error("Initialize request file failed! " + e.getMessage(), e);
+	}
+}
+				</pre>
+			</code>
+		</div>
+	</div>
+	
+	<div data-role="page" data-theme="i" id="RESTfulCodePage">
+		<div data-role="header" id="RESTfulCodePageHeader">
+			<h1>RESTful code</h1>
+		</div>
+		<div data-role="content">
+			<div>web.xml Part:</div>
+			<code>
+				<pre>
+&lt;servlet&gt;
+    	&lt;servlet-name&gt;RestfulContainer&lt;/servlet-name&gt;
+    	&lt;servlet-class&gt;com.sun.jersey.spi.container.servlet.ServletContainer&lt;/servlet-class&gt;
+    	&lt;init-param&gt;
+     		&lt;param-name&gt;com.sun.jersey.config.property.packages&lt;/param-name&gt;
+      		&lt;param-value&gt;com.kaf.ws&lt;/param-value&gt;
+    	&lt;/init-param&gt;
+    	&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+  	&lt;/servlet&gt;
+  	&lt;servlet-mapping&gt;
+    	&lt;servlet-name&gt;RestfulContainer&lt;/servlet-name&gt;
+    	&lt;url-pattern&gt;/resources/*&lt;/url-pattern&gt;
+  	&lt;/servlet-mapping&gt;
+				</pre>
+			</code>
+			<div>Resource Part:</div>
+			<code>
+				<pre>
+
+@Path("ProductService")
+public class ProductServiceResource {
+	static Logger logger = Logger.getLogger(ACE.class);
+
+	@POST
+    //@Produces("text/plain")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+    public String getMessage(String jsonStr) {
+		logger.info("input para is " + jsonStr);
+		JSONObject jInput = null;
+		JSONObject jOutput = new JSONObject();
+		JSONObject err = null;
+		JSONArray errArr = new JSONArray();
+		String lng = "", lat = "";
+		String result = "";
+		
+		SqlConn con = null;
+		ResultSet rs = null;
+		String sql = "";
+		
+		
+		try {
+			jInput = new JSONObject(jsonStr);
+			</pre>
+			</code>	
+		</div>	
+	</div>
+	
+	<div data-role="page" data-theme="i" id="ShellScriptCodePage">
+		<div data-role="header" id="JQueryCodePageHeader">
+			<h1>Shell Script Code to copy .war file onto the server</h1>
+		</div>
+		<div data-role="content">
+			<div>Example 1:</div>
+			<div>
+		
+			</div>
+			<code>
+				<pre>
+
+#!/bin/bash 
+
+project=$1;
+if [ ! -z "$2" ]
+then
+  port=$2;
+else
+  port='8080';
+fi
+
+SERVER='www.turbo-license.com';
+UPLOADPATH='upload';
+if [ "$port" -eq "9090" ]
+then
+  DESTPATH='/usr/share/tomcatdev/webapps';
+else
+  DESTPATH='/var/lib/tomcat5/webapps';
+fi
+
+# step1: copy file to upload
+scp dist/$project.war hzhang@$SERVER:$UPLOADPATH/
+# step2: move file to DEST
+password=aaaaaaa
+echo "$password" | ssh hzhang@$SERVER "sudo -S mv $UPLOADPATH/$project.war $DESTPATH"
+exit 1;
+
+				</pre>
+			</code>
+		</div>
+	</div>
+</Body>
+</html>
