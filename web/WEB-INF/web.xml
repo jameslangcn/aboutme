@@ -105,6 +105,15 @@
     	<servlet-name>AboutMe</servlet-name>
     	<url-pattern>/AboutMe</url-pattern>
   	</servlet-mapping>
+  	
+  	<servlet>
+    	<servlet-name>Test</servlet-name>
+    	<servlet-class>com.turbo_license.aboutme.Test</servlet-class>
+  	</servlet>
+	<servlet-mapping>
+    	<servlet-name>Test</servlet-name>
+    	<url-pattern>/Test</url-pattern>
+  	</servlet-mapping>
   
   <servlet>
     <servlet-name>Jersey REST Service</servlet-name>
